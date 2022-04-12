@@ -1,16 +1,36 @@
 [{
-  "name":"New York City",
-  "author":"Jack",
-  "year":2000
+  "name":"House of Earth and Blood",
+  "author":"Sarah J. Maas",
+  "year":2020,
+  "image": "https://images-na.ssl-images-amazon.com/images/I/91tFtUf+0ZL.jpg",
+  "description": "Sarah J. Maas's brand-new CRESCENT CITY series begins with House of Earth and Blood: the story of half-Fae and half-human Bryce Quinlan as she seeks revenge in a contemporary fantasy world of magic, danger, and searing romance."
 },
 {
-  "name":"New York City",
-  "author":"Jack",
-  "year":2002
+  "name":"Kingdom of the Feared",
+  "author":"Kerri Maniscalco",
+  "year": 2020,
+  "image": "https://prodimage.images-bn.com/pimages/9780316428477_p0_v1_s550x406.jpg",
+  "description": "Two curses. One prophecy. A reckoning all have feared. And a love more powerful than fate. All hail the king and queen of Hell."
 },
 {
-  "name":"New York City",
-  "author":"Jack",
-  "year":2003
+  "name":"It Ends with Us",
+  "author":"Colleen Hoover",
+  "year":2020,
+  "image": "https://img1.od-cdn.com/ImageType-100/5054-1/%7B3ADB16B9-E0CE-48E7-9C94-F55571274428%7DImg100.jpg",
+  "description": "In this “brave and heartbreaking novel that digs its claws into you and doesn’t let go, long after you’ve finished it” (Anna Todd, New York Times bestselling author) from the #1 New York Times bestselling author of All Your Perfects, a workaholic with a too-good-to-be-true romance can’t stop thinking about her first love."
+},
+{
+  "name":"Our Little World",
+  "author":"Karen Winn",
+  "year":2020,
+  "image": "https://images.penguinrandomhouse.com/cover/9780593184493",
+  "description": "It's a coming-of-age novel complicated by a tragic and untimely death, and it's also a novel about two sisters you will never forget."
+},
+{
+  "name":"Atomic Habits",
+  "author":"James Clear",
+  "year":2020,
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71iMxNPIwAL.jpg",
+  "description": "No matter your goals, Atomic Habits offers a proven framework for improving—every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results."
 }
 ]

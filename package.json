@@ -1,9 +1,17 @@
 {
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "db:seed": "node --experimental-json-modules seed/data.js"
   },
   "dependencies": {
+    "chalk": "^5.0.1",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "mongoose": "^6.2.10"
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

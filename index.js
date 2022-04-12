@@ -1,16 +1,33 @@
-require("./connection/connection")
+const db = require("./connection/connection.js")
+const routes = require("./router/router.js")
+// import db from "./db/connection.js";
+// import routes from "./router/router.js";
 
-require("./server/server")
-require("./seed/data")
-// let controller = require('../controller/controller')
+const express = require("express");
+const cors = require("cors");
+const logger = require("morgan");
+// import express from "express";
+// import cors from "cors";
+// import logger from "morgan";
+// import chalk from "chalk";
 
-// let router = new express.Router()
+const app = express();
+const PORT = process.env.PORT || 3000;
 
+app.use(express.json());
+app.use(cors());
+app.use(logger("dev"));
 
-// router.post('/', controller.create)
-// router.get('/books', controller.getAll)
-// router.get('/books/:id', controller.getById)
-// router.put('/books/:id', controller.updateById)
-// router.delete('/books/:id', controller.deleteById)
+app.use("/books", routes);
 
-// module.exports = router
+db.on("connected", () => {
+  console.clear();
+  console.log("Connectd to MongoDB!");
+  app.listen(PORT, () => {
+    process.env.NODE_ENV === "production"
+      ? console.log(`Express server running in production on port ${PORT}\n\n`)
+      : console.log(
+          `Express server running in development on: http://localhost:${PORT}`
+        );
+  });
+});
