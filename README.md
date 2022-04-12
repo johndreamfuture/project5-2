@@ -7,7 +7,7 @@ You can Create, Read,Update,and Delete the books following the route and with JS
 2. Install dependencies
 3. Run by command npm start
 # Clone repository
-git clone 
+git clone https://github.com/johndreamfuture/project5-2/tree/master
 
 # install dependencies
 npm install express mongoose
