@@ -1,9 +1,14 @@
 let mongoose = require('mongoose')
 
 //Connect to MongoDB
-const DATABASE = "book"
-let mongooseConfig = { useNewUrlParser: true, useUnifiedTopology: true }
-mongoose.connect(`mongodb://127.0.0.1:27017/${DATABASE}`, mongooseConfig)
+const MONGODB_URI = process.env.PROD_MONGODB || 'mongodb://127.0.0.1:27017/book'
+
+//const DATABASE = "book"
+//let mongooseConfig = { useNewUrlParser: true, useUnifiedTopology: true }
+//mongoose.connect(`mongodb://127.0.0.1:27017/${DATABASE}`, mongooseConfig)
+mongoose.connect(MONGODB_URI).catch(error =>{
+  console.log('unable to connect :  ', error.message)
+})
 
 
 //event listeners
