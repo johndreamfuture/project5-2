@@ -1,7 +1,7 @@
 let mongoose = require('mongoose')
 
 //Connect to MongoDB
-const MONGODB_URI = `${process.env.PROD_MONGODB}/book` || 'mongodb://127.0.0.1:27017/book'
+const MONGODB_URI = 'process.env.PROD_MONGODB/book' || 'mongodb://127.0.0.1:27017/book'
 
 //const DATABASE = "book"
 let mongooseConfig = { useNewUrlParser: true, useUnifiedTopology: true }
