@@ -6,3 +6,4 @@ let BookModel = mongoose.model("book", new mongoose.Schema({
 }))
 
 module.exports = BookModel
+// export default BookModel

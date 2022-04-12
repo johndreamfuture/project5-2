@@ -9,7 +9,7 @@ let controller = {
         console.error("Error on create()")
         response
           .status(500)
-          .json({ error: "Something went wrong" })
+          .json({ error: "Something went wrong at create" })
       })
   },
   getById(request, response) {
@@ -20,7 +20,7 @@ let controller = {
         console.error("Error on getById()")
         response
           .status(500)
-          .json({ error: "Something went wrong" })
+          .json({ error: "Something went wrong at getById" })
       })
   },
   getAll(request, response) {
@@ -31,7 +31,7 @@ let controller = {
         console.error("Error on getAll()")
         response
           .status(500)
-          .json({ error: "Something went wrong" })
+          .json({ error: "Something went wrong at getAll" })
       })
   },
   update(request, response) {
@@ -42,7 +42,7 @@ let controller = {
         console.error("Error on update()")
         response
           .status(500)
-          .json({ error: "Something went wrong" })
+          .json({ error: "Something went wrong at update" })
       })
   },
   delete(request, response) {
@@ -53,7 +53,7 @@ let controller = {
         console.error("Error on delete()" + error)
         response
           .status(500)
-          .json({ error: "Something went wrong" })
+          .json({ error: "Something went wrong at delete" })
       })
   },
 }

@@ -1,6 +1,7 @@
 require("./connection/connection")
 
 require("./server/server")
+require("./seed/data")
 // let controller = require('../controller/controller')
 
 // let router = new express.Router()
